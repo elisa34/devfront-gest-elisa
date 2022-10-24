@@ -1,0 +1,55 @@
+/*NAVBAR*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    width: 10%;
+    min-width: 124px;
+}
+
+li, a, button{
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 20px;
+}
+
+header{
+    background-color: #A95E56; 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    align-items: center;
+}
+
+.liens_nav {
+    list-style:none;
+}
+
+.liens_nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.liens_nav li a{
+    color: #FDF2E3;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.liens_nav li a:hover{
+    color: #F4AF99;
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    background-color: #FDF2E3;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 30px;
+}
+
+.panier {
+    color: #A95E56;
+}
