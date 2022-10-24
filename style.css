@@ -53,3 +53,22 @@ button {
 .panier {
     color: #A95E56;
 }
+
+/* BANNIERE */
+
+.banniere { margin: 30px 0; }
+
+.img-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banniere-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+
