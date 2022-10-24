@@ -56,7 +56,9 @@ button {
 
 /* BANNIERE */
 
-.banniere { margin: 30px 0; }
+.banniere { 
+    margin: 30px 0;
+}
 
 .img-container {
   display: flex;
@@ -71,4 +73,25 @@ button {
   object-position: right;
 }
 
+/* CATEGORIES */
+
+.categories {
+    font-family: 'Chau Philomene One', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #A95E56;
+}
+
+.card-title {
+  margin-block-start: 15px;
+  text-align: center;
+  color: #4D2C29;
+  text-decoration: none;
+}
+
+.meubles {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
