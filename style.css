@@ -99,3 +99,64 @@ button {
 ul {
     list-style-type: none;
   }
+
+  /* PRODUITS */
+
+.produits{
+
+}
+
+.produits p{
+    font-size: 14px;
+    font-weight: 800;
+   margin-bottom: 11px;
+    width: fit-content;
+}
+
+.produits h2{
+    font-size: 18px;
+    margin: 10px 0 25px 0;
+    width: fit-content;
+}
+
+.produits section{
+
+}
+
+.produits section .cartes{
+    
+}
+
+.produits section .cartes div div{
+    
+}
+
+.produits section .cartes div{
+    
+}
+
+.produits div a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.produits a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cartes div img{
+    
+}
+
+.cartes div h3{
+    font-size: 14px;
+    margin: 10px 0 5px 15px;
+}
+
+.description{
+    margin: 0 0 0 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
