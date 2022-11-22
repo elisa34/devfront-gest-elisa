@@ -1,0 +1,154 @@
+/*NAVBAR*/
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  width: 10%;
+  min-width: 124px;
+}
+
+li, a, button{
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 20px;
+}
+
+header{
+  background-color: #FDF2E3; 
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+  align-items: center;
+}
+
+.liens_nav {
+  list-style:none;
+}
+
+.liens_nav li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.liens_nav li a{
+  color: #A95E56;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.liens_nav li a:hover{
+  color: #F4AF99;
+  transition: all 0.3s ease 0s;
+}
+
+button {
+  background-color: #FDF2E3;
+  padding: 0px 25px;
+  border: none;
+  border-radius: 30px;
+}
+
+.panier {
+  background-color: #A95E56;
+  color: #FDF2E3;
+}
+
+/*formulaire*/
+body {
+    font-family: 'Chau Philomene One', sans-serif;
+    color: #A95E56;
+    padding: 0px;
+    background-color:#A95E56;
+} 
+
+h1  {
+  color: #A95E56;
+  width: 100%;
+  font-family: 'Chau Philomene One', sans-serif;
+  text-align: center;
+}
+  
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #A95E56;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+  background-color: #FDF2E3;
+}
+
+label{
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+button {
+  background-color: #A95E56;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#F4AF99;
+}
+
+.container {
+  box-sizing : border-box;
+  border-radius:5px;
+  background-color:#f2f2f2;
+  padding:20px;
+  width: 100%;
+  max-width: 440px;
+  margin:0 auto;
+  background-color: #FDF2E3 ;
+  margin-top: 45px;
+}
+
+/* Footer */
+.footer-content{
+  background-color: #A95E56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-content h3{
+  font-family: 'Chau Philomene One', sans-serif;
+  color: #FDF2E3;
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  color: #FDF2E3;
+  max-width: 500px;
+  margin: 10px auto;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+@media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+

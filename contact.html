@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <title>Nous contacter</title>
+</head>
+<body>
+
+<!--NAVBAR-->      
+<header>
+    
+  <img class="logo" src="img/meublo-couleur.png">
+  <nav>
+      <ul class="liens_nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="panier.html">Panier</a></li>
+      </ul>
+  </nav>
+
+  <button class="panier">Panier</button>
+</header>
+
+<!--Formulaire-->  
+    <div class="container">
+        <h1>Formulaire de contact</h1>
+        <form>
+          <label for="name">Nom Prénom</label>
+          <input type="text" id="name" name="name" >
+      
+          <label for="sujet">Sujet</label>
+          <input type="text" id="sujet" name="sujet" >
+      
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" >
+      
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message"  style="height:200px"></textarea>
+      
+          <button onclick = "saveData()">Envoyer</button>
+        </form>
+      </div>
+    
+
+<!--FOOTER--> 
+<div class="footer-content">
+  <h3>Meublo</h3>
+  <p>Elisa GEST DC3</p>
+  <p>Projet DC2022</p>
+</div>
+
+</body>
+</html>
+
