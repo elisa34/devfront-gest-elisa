@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="panier.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+    <title>Produits</title>
+</head>
+
+<body>
+<!--NAVBAR-->
+<header>
+    <img class="logo" src="img/logo.png">
+    <nav>
+        <ul class="liens_nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="panier.html">Panier</a></li>
+        </ul>
+    </nav>
+    <button class="panier"><a href="panier.html">Panier</a></button>
+</header>
+
+<!--INFOS PANIER-->
+<div>
+    <h2 id="title">Product Title</h2>
+    <div>
+        <input type="radio" id="color1" name="colors" value="white" checked>
+        <label for="color1" id="colorLabel1">White</label>
+    </div>
+    <div>
+        <input type="radio" id="color2" name="colors" value="blue">
+        <label for="color2" id="colorLabel2">Blue</label>
+    </div>
+    <div>
+        <input type="radio" id="color3" name="colors" value="red">
+        <label for="color3" id="colorLabel3">Red</label>
+    </div>
+    <p id="description">Description</p>
+    <p id="price">Price</p>
+
+    <div id="quantité">
+        <span id="quantityMinus">-</span>
+        <span id="quantityMore">+</span>
+        <span>number</span>
+    </div>
+    <input type="button" name="panier" value="Mettre au panier">
+</div>
+
+<script type="text/javascript" src="products.json"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
