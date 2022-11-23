@@ -43,16 +43,12 @@ header{
   transition: all 0.3s ease 0s;
 }
 
-button {
-  background-color: #FDF2E3;
-  padding: 0px 25px;
-  border: none;
-  border-radius: 30px;
-}
-
 .panier {
   background-color: #A95E56;
   color: #FDF2E3;
+  padding: 0px 25px;
+  border: none;
+  border-radius: 30px;
 }
 
 /*formulaire*/
@@ -95,7 +91,7 @@ button {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
@@ -140,7 +136,6 @@ button:hover {
   max-width: 500px;
   margin: 10px auto;
   font-family: 'Poppins', sans-serif;
-  
 }
 
 @media (max-width:500px) {

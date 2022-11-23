@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="produits.css">
     <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Produits</title>
 </head>
 
@@ -22,31 +23,38 @@
     <button class="panier"><a href="panier.html">Panier</a></button>
 </header>
 
-<!--INFOS PANIER-->
-<div>
-    <h2 id="title">Product Title</h2>
-    <div>
-        <input type="radio" id="color1" name="colors" value="white" checked>
-        <label for="color1" id="colorLabel1">White</label>
+<!--INFOS PRODUITS-->
+<section class="produits">
+    <div class="images">
+        <img id="image">
     </div>
-    <div>
-        <input type="radio" id="color2" name="colors" value="blue">
-        <label for="color2" id="colorLabel2">Blue</label>
-    </div>
-    <div>
-        <input type="radio" id="color3" name="colors" value="red">
-        <label for="color3" id="colorLabel3">Red</label>
-    </div>
-    <p id="description">Description</p>
-    <p id="price">Price</p>
 
-    <div id="quantité">
-        <span id="quantityMinus">-</span>
-        <span id="quantityMore">+</span>
-        <span>number</span>
+    <div class="fiche-produit">
+        <h2 id="title">Titre produit</h2>
+        <div class="radios">
+            <input type="radio" id="color1" name="colors" value="white" checked>
+            <label for="color1" id="colorLabel1">Couleur 1</label>
+        </div>
+        <div>
+            <input type="radio" id="color2" name="colors" value="blue">
+            <label for="color2" id="colorLabel2">Couleur 2</label>
+        </div>
+        <div>
+            <input type="radio" id="color3" name="colors" value="red">
+            <label for="color3" id="colorLabel3">Couleur 3</label>
+        </div>
+        <p id="description">Description</p>
+        <p id="price">Prix</p>
+
+        <div id="quantité">
+            <span id="quantityMinus">-</span>
+            <span id="quantityMore">+</span>
+            <span>Nombre</span>
+        </div>
+        <input type="button" id="acheter" name="panier" value="Mettre au panier">
     </div>
-    <input type="button" name="panier" value="Mettre au panier">
-</div>
+   
+</section>
 
 <script type="text/javascript" src="products.json"></script>
 <script src="script.js"></script>
