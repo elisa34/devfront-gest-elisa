@@ -5,9 +5,17 @@
     padding: 0px;
 }
 
+body {
+    background-color: #FDF2E3;
+}
+
 .logo {
     width: 10%;
     min-width: 124px;
+}
+
+.logo:hover {
+    box-shadow: none; 
 }
 
 li, a, button{
@@ -19,7 +27,7 @@ header{
     background-color: #A95E56;
     display: flex;
     justify-content: space-between;
-    padding: 30px 10%;
+    padding: 5px 10%;
     align-items: center;
 }
 
@@ -50,15 +58,16 @@ button {
     border-radius: 30px;
 }
 
-.panier {
+.panier a {
     color: #A95E56;
+    text-decoration: none;
 }
 
 /*FICHE PRODUIT*/
 img {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 100%;
     margin: 20px;
 }
 
@@ -66,7 +75,7 @@ img {
     display: flex;
     justify-content: center;
     width: 50%;
-    margin: 20px;
+    margin-right: 50px;
 }
 
 section {
@@ -79,7 +88,8 @@ h2 {
 }
 
 .produits{
-    margin-top: 161px;
+    margin-top: 55px;
+    margin-bottom: 55px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -128,3 +138,45 @@ h2 {
     width: fit-content;
     margin-top: 30px;
 }
+
+#acheter:hover {
+    background-color:#F4AF99;
+    color: #FDF2E3;
+    transition: all 0.3s ease 0s;
+  }
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:#A95E56;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+/*Bouton de quantité -+*/
+#minus , #plus{
+    border-radius: 30px;
+    background-color: #A95E56;
+    color: #FDF2E3;
+}
+
+#minus:hover{
+    background-color:#F4AF99;    
+    border:none;
+}
+#plus:hover{
+    background-color:#F4AF99;
+    border:none;
+}
+#number {
+    margin-left:5px;
+    margin-right:5px;
+}
+

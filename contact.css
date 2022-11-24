@@ -10,6 +10,10 @@
   min-width: 124px;
 }
 
+.logo:hover {
+  box-shadow: none; 
+}
+
 li, a, button{
   font-family: 'Chau Philomene One', sans-serif;
   font-size: 20px;
@@ -49,6 +53,12 @@ header{
   padding: 0px 25px;
   border: none;
   border-radius: 30px;
+}
+
+.panier a {
+  color: #A95E56;
+  text-decoration: none;
+  color: #FDF2E3;
 }
 
 /*formulaire*/
@@ -97,6 +107,7 @@ button {
 
 button:hover {
   background-color:#F4AF99;
+  transition: all 0.3s ease 0s;
 }
 
 .container {

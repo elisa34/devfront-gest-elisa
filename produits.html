@@ -12,7 +12,7 @@
 <body>
 <!--NAVBAR-->
 <header>
-    <img class="logo" src="img/logo.png">
+    <a href="index.html"><img class="logo" src="img/logo.png"></a>
     <nav>
         <ul class="liens_nav">
             <li><a href="index.html">Accueil</a></li>
@@ -46,11 +46,12 @@
         <p id="description">Description</p>
         <p id="price">Prix</p>
 
-        <div id="quantité">
-            <span id="quantityMinus">-</span>
-            <span id="quantityMore">+</span>
-            <span>Nombre</span>
+        <div id="quantite">
+            <button id="minus">-</button>
+            <span id="number">0</span>
+            <button id="plus">+</button>
         </div>
+
         <input type="button" id="acheter" name="panier" value="Mettre au panier">
     </div>
    

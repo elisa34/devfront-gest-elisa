@@ -10,6 +10,10 @@
     min-width: 124px;
 }
 
+.logo:hover {
+    box-shadow: none; 
+}
+
 li, a, button{
     font-family: 'Chau Philomene One', sans-serif;
     font-size: 20px;
@@ -50,8 +54,19 @@ button {
     border-radius: 30px;
 }
 
+button:hover {
+    background-color:#F4AF99;
+    color: #FDF2E3;
+    transition: all 0.3s ease 0s;
+  }
+
 .panier {
     color: #A95E56;
+}
+
+.panier a {
+    color: #A95E56;
+    text-decoration: none;
 }
 
 /* BANNIERE */
@@ -103,6 +118,10 @@ ul {
   }
 
   /* PRODUITS */
+
+img:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 
 .description{
     margin: 0 0 0 15px;

@@ -54,5 +54,10 @@ button {
     color: #A95E56;
 }
 
+.panier a {
+    color: #A95E56;
+    text-decoration: none;
+}
+
 
 /*panier*/
