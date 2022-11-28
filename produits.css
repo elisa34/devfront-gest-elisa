@@ -56,6 +56,7 @@ button {
     padding: 0px 25px;
     border: none;
     border-radius: 30px;
+    color: #A95E56;
 }
 
 .panier a {
@@ -180,3 +181,38 @@ input[type='radio']:checked:after {
     margin-right:5px;
 }
 
+/* Footer */
+.footer-content{
+    background-color: #A95E56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-content h3{
+    font-family: 'Chau Philomene One', sans-serif;
+    color: #FDF2E3;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    color: #FDF2E3;
+    max-width: 500px;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}

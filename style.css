@@ -158,6 +158,11 @@ img:hover {
     font-size: 17px;
 }
 
+span {
+    color: #A95E56;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
 /* Footer */
 .footer-content{
     background-color: #A95E56;
