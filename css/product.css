@@ -1,0 +1,110 @@
+/*FICHE PRODUIT*/
+img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-right: 50px;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Chau Philomene One', sans-serif;
+    color: #A95E56;
+}
+
+.products {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    max-width: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title{
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#title p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#price{
+    margin: 30px 0px;
+}
+
+#price h2{
+   font-weight: 800;
+}
+
+.radios div{
+    display: flex;
+    padding-right:15px
+}
+
+#description{
+    margin-top: 30px;
+}
+
+#acheter{
+    padding: 12px 20px;
+    background-color: #A95E56;
+    font-family: 'Poppins', sans-serif;
+    color: #FDF2E3;
+    border-radius: 30px;
+    border: none;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+#acheter:hover {
+    background-color:#F4AF99;
+    color: #FDF2E3;
+    transition: all 0.3s ease 0s;
+  }
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:#A95E56;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/* Quatity button */
+#minus, #more {
+    border-radius: 30px;
+    background-color: #A95E56;
+    color: #FDF2E3;
+}
+#minus:hover, #more:hover  {
+    background-color:#F4AF99;    
+    border:none;
+}
+#number {
+    margin-left:5px;
+    margin-right:5px;
+}

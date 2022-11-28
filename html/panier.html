@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/panier.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>Panier</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <header>
+            <a href="index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- PANIER Infos -->
+        <section>
+            <div class="container">
+                <div class="cart">
+                    <table id="cart" class="cart-item"></table>
+                    <div class="cart-item">
+                        <div class="total">
+                            <h5>Total : <span id="totalPrice">Price</span><span> €</span></h5>
+                        </div>
+                    </div>
+                    <form action="order.html">
+                        <button type="submit" class="">Acheter</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="footer-content">
+            <h3>Meublo</h3>
+            <p>Elisa GEST DC3</p>
+            <p>Projet DC2022</p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
+                </a>
+            </p>
+        </div>
+        <script src="../js/panier.js"></script>
+    </body>
+</html>
