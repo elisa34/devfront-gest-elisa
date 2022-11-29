@@ -129,6 +129,8 @@ function addProduct(totalPrice, colorLabel){
     if(localStorage.getItem('products')){
         products = JSON.parse(localStorage.getItem('products'));
     }
+    console.log(products)
+    console.log(products.find(productID => productID > 1))
     products.push(
     {
         productID : productID,
@@ -139,12 +141,3 @@ function addProduct(totalPrice, colorLabel){
     });
     localStorage.setItem('products', JSON.stringify(products));
 }
-
-// remove product in cart
-function removeProduct(productId){
-    let storageProducts = JSON.parse(localStorage.getItem('products'));
-    let products = storageProducts.filter(product => product.productId !== productId );
-    localStorage.setItem('products', JSON.stringify(products));
-}
-
-

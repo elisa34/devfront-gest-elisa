@@ -1,12 +1,26 @@
 /* Panier */
 
 .cart {
-    margin: 45px 0;
+    margin: 45px;
     background-color: #a95e56;
     padding: 60px 0;
     border-radius: 30px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+tr {
+     display: flex;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .total-price {
@@ -20,50 +34,18 @@
 	margin-bottom: 20px;
 }
 
-.center-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .cart-item img {
-	width: 115px;
+	width: 200px;
 }
 
-.cart-item h5 {
-    padding: 0 45px;
-    color: #141514;
-    font-size: 15px;
-}
-
-.cart-item .remove-item {
-	width: 25px!important;
-}
-
-.btn-default {
-	background-color: #fff;
-}
-
-.btn-success {
-    color: #a95e56;
-    background-color: #fdf2e3;
-}
-
-.cart-item .form-control {
-	background-color: #F6F5FA;
-	border: none;
-    width: 65px;
-    border-radius: 10px!important;
-    font-weight: 700;
+.cart-item span {
     font-size: 20px;
 }
 
-.input-group {
-	width: unset;
-}
-
-.status {
-	text-align: right;
+.cart-item span.title, .cart-item span.color {
+    padding: 0 45px;
+    color: #141514;
+    font-size: 20px;
 }
 
 .check-out {
@@ -72,10 +54,26 @@
 	font-size: 19px;
 	background-color: #FDF2E3;
 	border: none;
+    border-radius: 10px;
 }
 
 span {
     color: #A95E56;
     font-family: 'Chau Philomene One', sans-serif;
-    margin: 16px;
+}
+
+.total {
+    text-align: right;
+}
+
+@media (max-width:500px) {
+    .cart-item img, .cart-item span.title, .cart-item span.color {
+        width: 50px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .cart {
+        padding: 10px;
+    }
 }
