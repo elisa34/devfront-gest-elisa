@@ -1,4 +1,4 @@
-/*panier*/
+/* Panier */
 
 .cart {
     margin: 45px 0;
@@ -9,38 +9,38 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.total-price{
+.total-price {
 	padding-bottom: 15px;
 }
 
-.cart-item{
+.cart-item {
 	background-color: #FDF2E3;
 	border-radius: 10px;
 	padding: 15px 20px;
 	margin-bottom: 20px;
 }
 
-.center-item{
+.center-item {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.cart-item img{
+.cart-item img {
 	width: 115px;
 }
 
-.cart-item h5{
+.cart-item h5 {
     padding: 0 45px;
     color: #141514;
     font-size: 15px;
 }
 
-.cart-item .remove-item{
+.cart-item .remove-item {
 	width: 25px!important;
 }
 
-.btn-default{
+.btn-default {
 	background-color: #fff;
 }
 
@@ -49,7 +49,7 @@
     background-color: #fdf2e3;
 }
 
-.cart-item .form-control{
+.cart-item .form-control {
 	background-color: #F6F5FA;
 	border: none;
     width: 65px;
@@ -58,15 +58,15 @@
     font-size: 20px;
 }
 
-.input-group{
+.input-group {
 	width: unset;
 }
 
-.status{
+.status {
 	text-align: right;
 }
 
-.check-out{
+.check-out {
     float: right;
     padding: 10px 30px;
 	font-size: 19px;

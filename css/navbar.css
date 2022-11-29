@@ -1,4 +1,5 @@
 /* NAVBAR */
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -14,12 +15,12 @@
     box-shadow: none;
 }
 
-li, a, button{
+li, a, button {
     font-family: 'Chau Philomene One', sans-serif;
     font-size: 20px;
 }
 
-header{
+header {
     background-color: #A95E56;
     display: flex;
     justify-content: space-between;
@@ -31,18 +32,18 @@ header{
     list-style:none;
 }
 
-.navbar li{
+.navbar li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navbar li a{
+.navbar li a {
     color: #FDF2E3;
     transition: all 0.3s ease 0s;
     text-decoration: none;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     color: #F4AF99;
     transition: all 0.3s ease 0s;
 }

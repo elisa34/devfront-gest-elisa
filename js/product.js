@@ -1,17 +1,4 @@
-//Formulaire de contact dans Local Storage
-function saveData(){ var name = document.getElementById("name").value;
-var email = document.getElementById("email").value;
-var sujet = document.getElementById("sujet").value;
-var message = document.getElementById("message").value;
-
-localStorage.setItem("Nom Prenom",name);
-localStorage.setItem("Sujet",sujet);
-localStorage.setItem("Email",email);
-localStorage.setItem("Message",message);
-}
-
-
-//Les produits rangés par id 
+// Get product ID in url
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const productID = urlParams.get('product_id')
@@ -103,31 +90,31 @@ switch (productID) {
 }
 
 
-//Bouton produit ajouter enlever 
+// Product button
 window.onload = function() {
-    let moinsBtn = document.getElementById("minus");
-    let plusBtn = document.getElementById("plus");
+    let minusBtn = document.getElementById("minus");
+    let moreBtn = document.getElementById("more");
     let numberPlace = document.getElementById("number");
-    let acheterBtn = document.getElementById("acheter");
+    let buyBtn = document.getElementById("buy");
     let number = 0;
     let min = 0;
     let max = 10;
         
-    moinsBtn.onclick = function(){
-        if (number>min){
-           number = number-1; 
+    minusBtn.onclick = function() {
+        if (number > min) {
+           number = number - 1;
            numberPlace.innerText = number;
         }
     }
 
-    plusBtn.onclick = function(){
-        if(number<max){
-           number = number+1;
+    moreBtn.onclick = function() {
+        if (number < max) {
+           number = number + 1;
            numberPlace.innerText = number;
         }         
     }
 
-    acheterBtn.onclick = function() {
+    buyBtn.onclick = function() {
         let price = document.getElementById("price").innerHTML;
         let colorSelected = document.querySelector('input[name="colors"]:checked').value;
         let colorLabel = document.getElementById(colorSelected).innerHTML
@@ -136,12 +123,7 @@ window.onload = function() {
     }
 }
 
-
-// test recup ajout ou enleve
-localStorage.setItem('Panier', JSON.stringify(quantite));
-console.log(quantite);
-
-//test encore 
+// Add product in cart
 function addProduct(totalPrice, colorLabel){
     let products = [];
     if(localStorage.getItem('products')){
@@ -158,6 +140,7 @@ function addProduct(totalPrice, colorLabel){
     localStorage.setItem('products', JSON.stringify(products));
 }
 
+// remove product in cart
 function removeProduct(productId){
     let storageProducts = JSON.parse(localStorage.getItem('products'));
     let products = storageProducts.filter(product => product.productId !== productId );

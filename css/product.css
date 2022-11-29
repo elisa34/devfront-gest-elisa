@@ -1,4 +1,9 @@
-/*FICHE PRODUIT*/
+/* Product card */
+
+body {
+    background-color: #FDF2E3;
+}
+
 img {
     display: flex;
     justify-content: center;
@@ -30,40 +35,32 @@ h2 {
     flex-wrap: wrap;
 }
 
-.product-card {
-    display: flex;
-    max-width: 30%;
-    font-family: 'Poppins', sans-serif;
-}
-
-#title{
+#title {
     margin-top: 20px;
     font-size: 1.5em;
 }
 
-#title p{
+#title p {
     margin-top: 10px;
     font-size: 16px;
 }
 
-#price{
+#price {
     margin: 30px 0px;
+    font-weight: 800;
+
 }
 
-#price h2{
-   font-weight: 800;
-}
-
-.radios div{
+.radios div {
     display: flex;
     padding-right:15px
 }
 
-#description{
+#description, #quantity {
     margin-top: 30px;
 }
 
-#acheter{
+#buy {
     padding: 12px 20px;
     background-color: #A95E56;
     font-family: 'Poppins', sans-serif;
@@ -74,11 +71,11 @@ h2 {
     margin-top: 30px;
 }
 
-#acheter:hover {
+#buy:hover {
     background-color:#F4AF99;
     color: #FDF2E3;
     transition: all 0.3s ease 0s;
-  }
+}
 
 input[type='radio']:checked:after {
     width: 12px;
@@ -94,17 +91,29 @@ input[type='radio']:checked:after {
     border: 2px solid white;
 }
 
-/* Quatity button */
-#minus, #more {
+
+/* Quantity button */
+
+#minus , #more {
     border-radius: 30px;
     background-color: #A95E56;
     color: #FDF2E3;
 }
-#minus:hover, #more:hover  {
-    background-color:#F4AF99;    
+
+#minus:hover, #more:hover {
+    background-color:#F4AF99;
     border:none;
 }
+
 #number {
     margin-left:5px;
     margin-right:5px;
+}
+
+button {
+    background-color: #FDF2E3;
+    color: #A95E56;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 30px;
 }
