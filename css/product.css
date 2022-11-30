@@ -46,7 +46,7 @@ h2 {
 }
 
 #price {
-    margin: 30px 0px;
+    margin: 30px 0;
     font-weight: 800;
 
 }
@@ -113,7 +113,7 @@ input[type='radio']:checked:after {
 button {
     background-color: #FDF2E3;
     color: #A95E56;
-    padding: 0px 25px;
+    padding: 0 25px;
     border: none;
     border-radius: 30px;
 }

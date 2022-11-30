@@ -1,7 +1,7 @@
 /* Panier */
 
 .cart {
-    margin: 45px;
+    margin: 20px;
     background-color: #a95e56;
     padding: 60px 0;
     border-radius: 30px;
@@ -23,10 +23,6 @@ td {
     margin: 10px;
 }
 
-.total-price {
-	padding-bottom: 15px;
-}
-
 .cart-item {
 	background-color: #FDF2E3;
 	border-radius: 10px;
@@ -34,8 +30,13 @@ td {
 	margin-bottom: 20px;
 }
 
-.cart-item img {
+.cart-item img.image {
 	width: 200px;
+}
+
+.cart-item img.trash {
+    width: 15px;
+    margin-left: 5px;
 }
 
 .cart-item span {
@@ -62,12 +63,25 @@ span {
     font-family: 'Chau Philomene One', sans-serif;
 }
 
-.total {
-    text-align: right;
+.panier-info {
+    display: grid;
+}
+
+.quantity {
+    text-align: center;
+}
+
+.minus, .more {
+    border-radius: 30px;
+    background-color: #A95E56;
+    color: #FDF2E3;
+    padding: 0 15px;
+    border: none;
+    margin: 2px;
 }
 
 @media (max-width:500px) {
-    .cart-item img, .cart-item span.title, .cart-item span.color {
+    .cart-item img.image, .cart-item span.title, .cart-item span.color {
         width: 50px;
         padding: 5px;
         font-size: 15px;

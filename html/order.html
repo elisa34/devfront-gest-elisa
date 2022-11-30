@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/navbar.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/panier.css">
+        <link rel="stylesheet" href="../css/order.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -24,16 +25,38 @@
             </nav>
         </header>
 
+        <!-- Order Infos -->
+        <section>
+            <div class="container">
+                <div class="cart" style="background-color: white">
+                    <h2> Récapitulatif de la commande </h2>
+                    <div class="cart-item">
+                        <span id="name" class="title"></span>
+                        <span id="subject" class="title"></span>
+                        <span id="email" class="title"></span>
+                        <span id="message" class="title"></span>
+                    </div>
+                    <table id="cart" class="cart-item"></table>
+                    <div class="cart-item">
+                        <div class="total">
+                            <h5>Merci d'avoir commandé sur votre boutique préférée Meublo pour une valeur de : <span id="total"></span><span> €</span><br>Votre numéro de commande est le <span id="orderRef"></span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FOOTER -->
         <div class="footer-content">
             <h3>Meublo</h3>
             <p>Elisa GEST DC3</p>
             <p>Projet DC2022</p>
             <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
                 </a>
             </p>
         </div>
+        <script src="../js/order.js"></script>
     </body>
 </html>

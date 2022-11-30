@@ -119,25 +119,32 @@ window.onload = function() {
         let colorSelected = document.querySelector('input[name="colors"]:checked').value;
         let colorLabel = document.getElementById(colorSelected).innerHTML
         let totalPrice = price * number;
-        addProduct(totalPrice, colorLabel)
+        addProduct(totalPrice, colorLabel, number)
     }
 }
 
 // Add product in cart
-function addProduct(totalPrice, colorLabel){
+function addProduct(totalPrice, colorLabel, number, ){
     let products = [];
-    if(localStorage.getItem('products')){
+    let found = 1
+    if (localStorage.getItem('products')) {
         products = JSON.parse(localStorage.getItem('products'));
+        found = products.find(element => element.productID === productID);
     }
-    console.log(products)
-    console.log(products.find(productID => productID > 1))
-    products.push(
-    {
-        productID : productID,
-        image : document.getElementById("image").src,
-        title : document.getElementById("title").innerHTML,
-        totalPrice : totalPrice,
-        colorLabel : colorLabel
-    });
+    if (found === undefined || found === 1) {
+        products.push(
+        {
+            productID: productID,
+            image: document.getElementById("image").src,
+            title: document.getElementById("title").innerHTML,
+            price: document.getElementById("price").innerHTML,
+            totalPrice: totalPrice,
+            colorLabel: colorLabel,
+            quantity: number
+        });
+    } else {
+        found.totalPrice += totalPrice
+        found.quantity += number
+    }
     localStorage.setItem('products', JSON.stringify(products));
 }
