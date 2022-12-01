@@ -51,6 +51,7 @@ button:hover {
   padding: 20px;
   width: 100%;
   max-width: 440px;
-  margin: 0 auto 0 45px;
   background-color: #FDF2E3;
+  margin:0 auto;
+  margin-top: 45px;
 }

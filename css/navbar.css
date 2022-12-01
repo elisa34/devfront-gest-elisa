@@ -66,3 +66,18 @@ button:hover {
     color: #A95E56;
     text-decoration: none;
 }
+
+
+/* RESPONSIVE */
+@media (max-width:600px) {
+    .navbar {
+        display: inline-block;
+        position: absolute;
+        right: 72px;
+        top: 17px;
+    }
+
+    header img {
+        display: none;
+    }
+}
